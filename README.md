@@ -2,6 +2,19 @@
 
 to acces graphQL with cURL.. anter your terminal..
 
++ git clone https://github.com/Bimoan09/ujian-graphql.git
++ Require the package via Composer in your composer.json.
+
+{
+  "require": {
+    "folklore/graphql": "~1.0.0"
+  }
+}
++ compsoser install **or** composer update
+
+
+
+
 #GET
 + $curl -XGET T \-H "Content-Type:application/json" \--data '{ "query": "{ users{name,email,jabatan}}" }' "localhost:8000/graphql"
 and the results
